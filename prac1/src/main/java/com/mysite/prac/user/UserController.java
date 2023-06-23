@@ -3,6 +3,7 @@ package com.mysite.prac.user;
 import javax.validation.Valid;
 
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -56,4 +57,8 @@ public class UserController {
     public String login() {
     	return "login_form";
     }
+    
+    
+
+ 
 }
