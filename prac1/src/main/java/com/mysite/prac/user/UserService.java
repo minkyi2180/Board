@@ -29,14 +29,19 @@ public class UserService {
 		return user;
 	}
 	
-	public SiteUser getUser(String username) {
-        Optional<SiteUser> siteUser = this.userRepository.findByusername(username);
+	public SiteUser getUser(String id) {
+        Optional<SiteUser> siteUser = this.userRepository.findByusername(id);
         if (siteUser.isPresent()) {
             return siteUser.get();
         } else {
             throw new DataNotFoundException("siteuser not found");
         }
     }
+
+	public void update(SiteUser user, String email, String passowrd) {
+		// TODO Auto-generated method stub
+		
+	}
 
 	
 	
