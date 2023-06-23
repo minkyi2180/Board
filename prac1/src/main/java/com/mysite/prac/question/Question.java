@@ -22,6 +22,8 @@ import lombok.Setter;
 @Setter
 @Entity
 public class Question {
+	private LocalDateTime modifyDate;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
