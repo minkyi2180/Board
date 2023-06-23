@@ -68,7 +68,7 @@ public class UserController {
     
     
     @PreAuthorize("isAuthenticated()")
-    @GetMapping("/mypage")
+    @GetMapping("/mypage/{id}")
     public String mypage() {
     	return "my_page";
     }
