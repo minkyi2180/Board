@@ -1,6 +1,6 @@
 # Board
 <br>
-Springboot, H2 database 사용<br>
+Springboot Gradle, H2 database 사용<br>
 
 ### 완성(약 70%)<br>
 - 회원가입/ 로그인/ 로그아웃
