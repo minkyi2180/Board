@@ -24,6 +24,7 @@ import lombok.RequiredArgsConstructor;
 @Controller
 @RequestMapping("/user")
 public class UserController {
+	private final UserRepository userRepository;
 	private final UserService userService;
 	
 	@GetMapping("/signup")
@@ -68,8 +69,11 @@ public class UserController {
     
     
     @PreAuthorize("isAuthenticated()")
-    @GetMapping("/mypage/{id}")
+    @GetMapping(value= "/mypage")
     public String mypage() {
+//    public String mypage(Model model, @PathVariable("id") String id) {
+//    	SiteUser user = userService.getUser(user.getId();
+//    	model.addAttribute("user", user);
     	return "my_page";
     }
     
