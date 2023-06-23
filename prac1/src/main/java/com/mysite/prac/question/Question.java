@@ -9,9 +9,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 import com.mysite.prac.answer.Answer;
+import com.mysite.prac.user.SiteUser;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -34,5 +36,8 @@ public class Question {
 	
 	@OneToMany(mappedBy = "question", cascade=CascadeType.REMOVE)
 	private List<Answer> answerList;
+	
+	@ManyToOne
+	private SiteUser author;
 
 }
