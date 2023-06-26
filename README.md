@@ -17,4 +17,4 @@ Springboot Gradle, H2 database, Thymeleaf 사용<br>
 아쉬운 점 : 그대로 폼을 갖다쓴 것이 아쉽다<br>
 <br><br>
 참고 : 점프투스프링부트
-<img width="80%" src="https://github.com/minkyi2180/Board/assets/130128767/cdfcfcb1-854e-4d85-8100-4466ed8664ad">
+<img width="80%" src="https://github.com/minkyi2180/Board/assets/130128767/76d75568-320f-4bdb-859b-86db830daf60">
